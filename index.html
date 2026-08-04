@@ -47,6 +47,11 @@ pre{background:var(--code);border:1px solid var(--line);border-radius:8px;paddin
 .err b{font-weight:500}
 .info{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:16px 20px;font-size:14px;margin-bottom:16px}
 code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}
+.ideas{margin:0;padding:0;list-style:none;counter-reset:idea}
+.ideas li{counter-increment:idea;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;display:flex;gap:10px;align-items:baseline}
+.ideas li:last-child{border-bottom:none}
+.ideas li:before{content:"#" counter(idea,decimal-leading-zero);font-size:11px;color:var(--tx3);font-weight:500;min-width:32px;flex-shrink:0}
+.ideas-box{max-height:420px;overflow-y:auto;border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:#fdfcf8}
 </style>
 </head>
 <body>
@@ -73,13 +78,116 @@ code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:ui-mon
 <p class="goal">Aus 101 allgemeinen Blickwinkeln wird eine Liste von Fragen, die nur dein Geschäft betreffen. Das ist der Unterschied zwischen einem beliebigen Interview und einem, aus dem Content fällt.</p>
 <div class="lbl">So gehst du vor</div>
 <ol class="do">
-<li>Öffne die 101er-Ideenliste aus Tag 1 in einem Dokument.</li>
+<li>Klapp die 101er-Ideenliste direkt unter diesem Schritt auf und arbeite damit hier in der Anleitung.</li>
 <li>Geh jeden der 101 Punkte einmal durch und markiere in drei Farben: grün heißt „das habe ich konkret erlebt", gelb heißt „darüber könnte ich nachdenken", rot heißt „passt nicht zu mir".</li>
 <li>Lösche alles Rote. Erfahrungsgemäß bleiben 25 bis 40 Punkte übrig. Wenn mehr als 60 übrig bleiben, warst du zu großzügig.</li>
 <li>Formuliere jeden verbliebenen Punkt in eine Frage um, die sich nicht mit einem Satz beantworten lässt. Aus „Teile deine größten beruflichen Fehler" wird zum Beispiel „Welcher Fehler hat mich am meisten Geld gekostet, und was ist danach konkret passiert?"</li>
 <li>Sortiere die Fragen so, dass die leichten oben stehen. Du redest dich damit warm.</li>
 <li>Speichere die Datei als <code>Fragenraster</code> im selben Ordner, in dem später die Datenbank liegt.</li>
 </ol>
+<details class="pd" id="101liste" open><summary>101er-Ideenliste — Tag 1</summary><div class="pdb"><div class="ideas-box"><ol class="ideas">
+<li>Hinterfrage gängige „Wahrheiten“.</li>
+<li>Demonstriere den ROI von deiner Dienstleistung.</li>
+<li>Zeige auf, wie Weiterbildung deine Karrierechancen verbessert.</li>
+<li>Teile deine Erfahrungen mit Vertrauensbruch und daraus gezogenen Lehren.</li>
+<li>Teile deine ungewöhnliche, erste Erfahrung.</li>
+<li>Dokumentiere inspirierende Momente auf Reisen</li>
+<li>Zeige, wie du mit Struktur Chaos bewältigst.</li>
+<li>Zeige, wie du Mitarbeiter durch Wertschätzung belohnst.</li>
+<li>Teile deine Erfahrungen mit unfairen Behördenverfahren.</li>
+<li>Entlarve die absurden Folgen neuer Gesetze.</li>
+<li>Teile deine größten beruflichen Fehler und was du daraus gelernt hast.</li>
+<li>Teile, was dich früher aus der Bahn geworfen hat und wie du heute damit umgehst.</li>
+<li>Zeige auf, wie alternative Karrierewege zum Erfolg führen können.</li>
+<li>Entlarve versteckte Kosten.</li>
+<li>Zeige die überwältigende Nachfrage nach deinem Angebot.</li>
+<li>Zeige die wahren Kosten falscher Entscheidungen.</li>
+<li>Zeige, wie du Branchen-Klischees widerlegst.</li>
+<li>Zeige, wie gemeinsame Anstrengung zu grossen Erfolgen führt.</li>
+<li>Teile deine kontroversen Meinungen und löse Diskussionen aus.</li>
+<li>Teile deine Dankbarkeit, auch für die Tiefpunkte.</li>
+<li>Zeige, wie KI dir bei alltäglichen Aufgaben hilft.</li>
+<li>Zeige, wie Leidenschaft wichtiger ist als Qualifikationen.</li>
+<li>Hinterfrage deine Prioritäten und zeige, was wirklich zählt.</li>
+<li>Teile deine Geschichte von unerwarteter Hilfe und Menschlichkeit.</li>
+<li>Dokumentiere deinen Lernprozess und teile deine Erkenntnisse.</li>
+<li>Teile deine fundierte Produktempfehlung und zeige, wie sie Probleme löst.</li>
+<li>Hinterfrage die Effizienz traditioneller Prozesse.</li>
+<li>Dokumentiere deine LinkedIn-Wachstums-Schwankungen.</li>
+<li>Beleuchte die verheerenden Folgen bürokratischer Hürden.</li>
+<li>Teile deine wichtigsten Erkenntnisse aus einem inspirierenden Erlebnis.</li>
+<li>Identifiziere deine Stärken und positioniere dich als unverzichtbarer Experte.</li>
+<li>Teile deine unverzichtbare Checkliste für stressfreies Arbeiten.</li>
+<li>Teile deine Geschichte über überwundene Ängste und erlangtes Vertrauen.</li>
+<li>Enthülle ungerechte Geschäftspraktiken und deren rechtliche Folgen.</li>
+<li>Zeige deine Wertschätzung für deine Community.</li>
+<li>Zeige, wie du Online-Meetings gestaltest.</li>
+<li>Teile deine wertvollsten Learnings aus jahrelanger Erfahrung.</li>
+<li>Sammle und teile inspirierende Lebensweisheiten aus eurer Erfahrung.</li>
+<li>Teile deine überraschendsten und wertvollsten Fähigkeiten und wie du sie erworben hast.</li>
+<li>Teile deine frühen Erfahrungen mit neuen Marketing-Tools.</li>
+<li>Feiere Menschen, die still und leise Großartiges leisten.</li>
+<li>Hinterfrage vermeintliche Erfolgsrezepte und teile deine eigene Erfahrung.</li>
+<li>Zeige die Realität hinter dem Traum der Selbstständigkeit.</li>
+<li>Teile inspirierende Lektionen aus einem Workshop.</li>
+<li>Zeige, wie du Expertenwissen in umsetzbare Tipps verwandelst.</li>
+<li>Zeige, wie Automatisierung scheinbar Unmögliches möglich macht.</li>
+<li>Teile, wie dich Kritik zu Wachstum und Erfolg führte.</li>
+<li>Identifiziere und teile deine größten Frustrationen.</li>
+<li>Rede über deine unfairen Vorteile und teile dein Wissen.</li>
+<li>Vergleiche deine Lieblings-Tools und teile deine Erfahrungen.</li>
+<li>Zeige die Grenzen gängiger Tools auf und zeige Workarounds.</li>
+<li>Feiere kleine Auszeiten vom Alltag.</li>
+<li>Zeige, was dich von der Konkurrenz unterscheidet.</li>
+<li>Entmystifiziere den Erfolg auf Social Media.</li>
+<li>Entlarve ungerechte Erwartungen in Geschäftsbeziehungen.</li>
+<li>Entwickle einen Plan und setze dir erreichbare Ziele für das neue Jahr.</li>
+<li>Teile deine größten unternehmerischen Herausforderungen und wie du sie löst.</li>
+<li>Feiere deinen persönlichen Fortschritt und inspirier andere.</li>
+<li>Teile deine effizientesten Arbeitsmethoden mit anderen.</li>
+<li>Diskutiere offen über den Wert von direktem Feedback.</li>
+<li>Teile deine wichtigsten Lektionen aus der Selbstständigkeit.</li>
+<li>Zeige, wie strukturierte Prozesse bessere Ergebnisse liefern.</li>
+<li>Beleuchte die finanziellen Vorteile und Risiken von Investitionen.</li>
+<li>Hinterfrage bestehende Ungleichheiten und diskutiere deren Auswirkungen.</li>
+<li>Zeige, wie wichtig Work-Life-Balance und Vertrauen im Team sind.</li>
+<li>Teile inspirierende Ratschläge an dein jüngeres Ich.</li>
+<li>Zeige, wie du Herausforderungen mit Humor meisterst.</li>
+<li>Teile deine Erfahrung mit Remote-Arbeit und entlarve die Mythen.</li>
+<li>Vergleiche legale und illegale Wege zum Wachstum.</li>
+<li>Zeige, wie du mit geringem Aufwand große Erfolge erzielst.</li>
+<li>Teile deine Erfolgsgeschichte trotz Zweifeln anderer.</li>
+<li>Feiere langfristige Erfolge und zeige den Weg dorthin.</li>
+<li>Zeige, wie du mit Tools deine Produktivität steigerst.</li>
+<li>Teile deine überraschenden, lehrreiche Fehlergeschichten aus der Praxis.</li>
+<li>Zeige, wie Einsatz zu Erfolg und Anerkennung führt.</li>
+<li>Teile dein Expertenwissen und hilf anderen, ihre Fehler zu vermeiden.</li>
+<li>Feiere Meilensteine, die harte Arbeit und Durchhaltevermögen belohnen.</li>
+<li>Repurpose deinen bestehenden Content in kurze Videos.</li>
+<li>Zeige, wie du deine schlechten Gewohnheiten überwindest.</li>
+<li>Zeige, wie sich scheinbar hoher Aufwand langfristig auszahlt.</li>
+<li>Entlarve Missverständnisse zum Thema Datenschutz im Business.</li>
+<li>Zeige auf, wie du beruflichen Stillstand vermeidest.</li>
+<li>Teile deine hartnäckige Verfolgung eines Ziels, trotz Widerständen.</li>
+<li>Teile deine besten Tipps für erfolgreiches Recruiting.</li>
+<li>Feiere deine kleinen Siege und lerne aus deinen Fehlern.</li>
+<li>Lerne aus Feedback, um dein Team und dein Unternehmen zu verbessern.</li>
+<li>Analysiere, wie kleine Optimierungen grosse Unterschiede bewirken.</li>
+<li>Zeige, wie man komplexe Business-Prozesse vereinfacht.</li>
+<li>Zeige ethische Wege, um Geschäftskosten zu senken.</li>
+<li>Erstelle eine Schritt-für-Schritt-Anleitung.</li>
+<li>Zeige deine Fähigkeiten, um lukrative Aufträge zu gewinnen.</li>
+<li>Hinterfrage gesellschaftliche Normen.</li>
+<li>Zeige den Unterschied zwischen erfüllender und frustrierender Arbeit.</li>
+<li>Entlarve unethische Geschäftspraktiken und zeige den wahren Wert an.</li>
+<li>Feiere Erfolge und Meilensteine mit deinem Team.</li>
+<li>Zeige, wie ehrliche Beratung Kunden langfristig bindet.</li>
+<li>Teile deine Erfahrungen und zeige, wie Coaching dich weitergebracht hat.</li>
+<li>Zeige, wie kleine, gemeinschaftliche Ritualen das Arbeitsklima verbessern.</li>
+<li>Zeige, wie Technologie lästige Aufgaben vereinfacht.</li>
+<li>Die versteckten Gefahren auf, die jeder Unternehmer kennt.</li>
+<li>Teile inspirierende Begegnungen und überraschende Erkenntnisse von Branchen-Events.</li>
+</ol></div></div></details>
 <div class="ok"><b>Fertig, wenn</b> 25 bis 40 Fragen dastehen und jede mit einem Fragezeichen endet.</div>
 <div class="err"><b>Typischer Fehler:</b> Fragen stehen lassen, die man mit ja oder nein beantworten kann. Die liefern im Interview zwei Sätze und dann Stille.</div>
 </div>
