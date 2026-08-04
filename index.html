@@ -47,11 +47,32 @@ pre{background:var(--code);border:1px solid var(--line);border-radius:8px;paddin
 .err b{font-weight:500}
 .info{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:16px 20px;font-size:14px;margin-bottom:16px}
 code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}
-.ideas{margin:0;padding:0;list-style:none;counter-reset:idea}
-.ideas li{counter-increment:idea;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;display:flex;gap:10px;align-items:baseline}
-.ideas li:last-child{border-bottom:none}
-.ideas li:before{content:"#" counter(idea,decimal-leading-zero);font-size:11px;color:var(--tx3);font-weight:500;min-width:32px;flex-shrink:0}
+.ideas{margin:0;padding:0;list-style:none}
+.ideas li.idea-item{padding:7px 6px;border-bottom:1px solid var(--line);font-size:13.5px;display:flex;gap:8px;align-items:center;border-radius:6px;margin:0 -4px}
+.ideas li.idea-item:last-child{border-bottom:none}
+.ideas li.idea-item.filtered-out{display:none}
+.idea-num{font-size:11px;color:var(--tx3);font-weight:500;min-width:32px;flex-shrink:0}
+.idea-text{flex:1;line-height:1.45}
+.idea-marks{display:flex;gap:5px;flex-shrink:0}
+.mark-btn{width:20px;height:20px;border-radius:50%;border:2px solid var(--line2);padding:0;cursor:pointer;opacity:.28;transition:opacity .15s,transform .12s,border-color .12s}
+.mark-btn:hover{opacity:.65}
+.mark-btn.on{opacity:1;border-color:var(--tx);transform:scale(1.12)}
+.mark-g{background:#3d9a6a}
+.mark-y{background:#e0b020}
+.mark-r{background:#d45545}
+.idea-item.marked-g{background:#e8f5ee}
+.idea-item.marked-y{background:#faf3dc}
+.idea-item.marked-r{background:#fce8e4}
 .ideas-box{max-height:420px;overflow-y:auto;border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:#fdfcf8}
+.idea-toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.idea-toolbar .lbl{margin:0}
+.idea-filt{font-size:12px;padding:5px 11px;border-radius:99px;border:1px solid var(--line2);background:#fff;color:var(--tx2);cursor:pointer;line-height:1.3}
+.idea-filt:hover{border-color:var(--acc);color:var(--acc)}
+.idea-filt.active{border-color:var(--acc);background:var(--accBg);color:var(--acc);font-weight:500}
+.idea-filt .cnt{font-size:11px;opacity:.8}
+.idea-filt.idea-clear{margin-left:auto;border-style:dashed}
+.idea-legend{font-size:12px;color:var(--tx3);margin-bottom:10px;line-height:1.5}
+.idea-legend b{font-weight:500;color:var(--tx2)}
 </style>
 </head>
 <body>
@@ -79,13 +100,24 @@ code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:ui-mon
 <div class="lbl">So gehst du vor</div>
 <ol class="do">
 <li>Klapp die 101er-Ideenliste direkt unter diesem Schritt auf und arbeite damit hier in der Anleitung.</li>
-<li>Geh jeden der 101 Punkte einmal durch und markiere in drei Farben: grün heißt „das habe ich konkret erlebt", gelb heißt „darüber könnte ich nachdenken", rot heißt „passt nicht zu mir".</li>
+<li>Geh jeden der 101 Punkte einmal durch und markiere mit den drei Farbkreisen rechts: grün = „konkret erlebt", gelb = „darüber könnte ich nachdenken", rot = „passt nicht zu mir". Mit den Filtern oben siehst du nur die markierten Punkte.</li>
 <li>Lösche alles Rote. Erfahrungsgemäß bleiben 25 bis 40 Punkte übrig. Wenn mehr als 60 übrig bleiben, warst du zu großzügig.</li>
 <li>Formuliere jeden verbliebenen Punkt in eine Frage um, die sich nicht mit einem Satz beantworten lässt. Aus „Teile deine größten beruflichen Fehler" wird zum Beispiel „Welcher Fehler hat mich am meisten Geld gekostet, und was ist danach konkret passiert?"</li>
 <li>Sortiere die Fragen so, dass die leichten oben stehen. Du redest dich damit warm.</li>
 <li>Speichere die Datei als <code>Fragenraster</code> im selben Ordner, in dem später die Datenbank liegt.</li>
 </ol>
-<details class="pd" id="101liste" open><summary>101er-Ideenliste — Tag 1</summary><div class="pdb"><div class="ideas-box"><ol class="ideas">
+<details class="pd" id="101liste" open><summary>101er-Ideenliste — Tag 1</summary><div class="pdb">
+<div class="idea-toolbar" id="ideaToolbar">
+<span class="lbl">Filter</span>
+<button type="button" class="idea-filt active" data-filter="all">Alle <span class="cnt" id="cnt-all">101</span></button>
+<button type="button" class="idea-filt" data-filter="g">Grün <span class="cnt" id="cnt-g">0</span></button>
+<button type="button" class="idea-filt" data-filter="y">Gelb <span class="cnt" id="cnt-y">0</span></button>
+<button type="button" class="idea-filt" data-filter="r">Rot <span class="cnt" id="cnt-r">0</span></button>
+<button type="button" class="idea-filt" data-filter="none">Offen <span class="cnt" id="cnt-none">101</span></button>
+<button type="button" class="idea-filt idea-clear" id="ideaClear" title="Alle Markierungen löschen">Zurücksetzen</button>
+</div>
+<p class="idea-legend"><b>Grün</b> = konkret erlebt · <b>Gelb</b> = darüber nachdenken · <b>Rot</b> = passt nicht zu mir · Klick auf einen Kreis markiert, erneuter Klick entfernt die Markierung</p>
+<div class="ideas-box"><ol class="ideas" id="ideasList">
 <li>Hinterfrage gängige „Wahrheiten“.</li>
 <li>Demonstriere den ROI von deiner Dienstleistung.</li>
 <li>Zeige auf, wie Weiterbildung deine Karrierechancen verbessert.</li>
@@ -1104,6 +1136,106 @@ document.querySelectorAll('.cp').forEach(function(b){
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else{fb()}
  });
 });
+
+(function(){
+ var STORAGE='linkedin-101-marks';
+ var list=document.getElementById('ideasList');
+ if(!list)return;
+ var marks=JSON.parse(localStorage.getItem(STORAGE)||'{}');
+ var currentFilter='all';
+ var items=list.querySelectorAll('li');
+
+ items.forEach(function(li,i){
+  var id=String(i+1);
+  var text=li.textContent.trim();
+  li.className='idea-item';
+  li.dataset.id=id;
+  li.innerHTML='<span class="idea-num">#'+String(i+1).padStart(3,'0')+'</span>'+
+   '<span class="idea-text">'+text+'</span>'+
+   '<span class="idea-marks">'+
+   '<button type="button" class="mark-btn mark-g" data-m="g" title="Konkret erlebt" aria-label="Grün"></button>'+
+   '<button type="button" class="mark-btn mark-y" data-m="y" title="Darüber nachdenken" aria-label="Gelb"></button>'+
+   '<button type="button" class="mark-btn mark-r" data-m="r" title="Passt nicht zu mir" aria-label="Rot"></button>'+
+   '</span>';
+ });
+
+ function save(){localStorage.setItem(STORAGE,JSON.stringify(marks));updateCounts();applyFilter()}
+
+ function applyMarkUI(id){
+  var item=list.querySelector('[data-id="'+id+'"]');
+  if(!item)return;
+  var m=marks[id];
+  item.classList.remove('marked-g','marked-y','marked-r');
+  item.querySelectorAll('.mark-btn').forEach(function(b){b.classList.remove('on')});
+  if(m==='g'){item.classList.add('marked-g');item.querySelector('.mark-g').classList.add('on')}
+  else if(m==='y'){item.classList.add('marked-y');item.querySelector('.mark-y').classList.add('on')}
+  else if(m==='r'){item.classList.add('marked-r');item.querySelector('.mark-r').classList.add('on')}
+ }
+
+ function updateCounts(){
+  var g=0,y=0,r=0,none=0;
+  items.forEach(function(item){
+   var id=item.dataset.id;
+   var m=marks[id];
+   if(m==='g')g++;
+   else if(m==='y')y++;
+   else if(m==='r')r++;
+   else none++;
+  });
+  document.getElementById('cnt-all').textContent=items.length;
+  document.getElementById('cnt-g').textContent=g;
+  document.getElementById('cnt-y').textContent=y;
+  document.getElementById('cnt-r').textContent=r;
+  document.getElementById('cnt-none').textContent=none;
+ }
+
+ function applyFilter(){
+  items.forEach(function(item){
+   var id=item.dataset.id;
+   var m=marks[id];
+   var show=true;
+   if(currentFilter==='g')show=m==='g';
+   else if(currentFilter==='y')show=m==='y';
+   else if(currentFilter==='r')show=m==='r';
+   else if(currentFilter==='none')show=!m;
+   item.classList.toggle('filtered-out',!show);
+  });
+ }
+
+ list.addEventListener('click',function(e){
+  var btn=e.target.closest('.mark-btn');
+  if(!btn)return;
+  e.preventDefault();
+  var item=btn.closest('.idea-item');
+  var id=item.dataset.id;
+  var color=btn.dataset.m;
+  if(marks[id]===color)delete marks[id];
+  else marks[id]=color;
+  applyMarkUI(id);
+  save();
+ });
+
+ document.getElementById('ideaToolbar').addEventListener('click',function(e){
+  var filt=e.target.closest('.idea-filt');
+  if(!filt)return;
+  if(filt.id==='ideaClear'){
+   if(confirm('Alle Markierungen wirklich löschen?')){
+    marks={};
+    items.forEach(function(item){applyMarkUI(item.dataset.id)});
+    save();
+   }
+   return;
+  }
+  document.querySelectorAll('.idea-filt').forEach(function(b){b.classList.remove('active')});
+  filt.classList.add('active');
+  currentFilter=filt.dataset.filter;
+  applyFilter();
+ });
+
+ items.forEach(function(item){applyMarkUI(item.dataset.id)});
+ updateCounts();
+ applyFilter();
+})();
 </script>
 </body>
 </html>
