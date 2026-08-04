@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LinkedIn Power Workshop — Schritt-für-Schritt-Anleitung</title>
+<style>
+:root{--bg:#faf9f5;--card:#fff;--line:#e5e2d9;--line2:#c9c5b8;--tx:#1f1e1c;--tx2:#5f5e5a;--tx3:#96948c;--acc:#534AB7;--accBg:#EEEDFE;--grBg:#E1F5EE;--amBg:#FAEEDA;--code:#f6f4ec}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:40px 24px 90px}
+h1{font-size:26px;font-weight:500;margin:0 0 6px}
+.lead{color:var(--tx2);font-size:15px;margin:0 0 4px}
+.toc{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:18px 22px;margin:26px 0 20px}
+.toc h2{font-size:14px;font-weight:500;margin:0 0 10px}
+.toc div{font-size:13.5px;margin-bottom:5px}
+.toc a{color:var(--tx);text-decoration:none;border-bottom:1px solid var(--line2)}
+.toc a:hover{color:var(--acc)}
+.bh{margin:38px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line2)}
+.bt{font-size:21px;font-weight:500;margin:0 0 2px}
+.bm{font-size:13px;color:var(--tx2)}
+.s{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:20px 22px;margin-bottom:14px}
+.sh{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:10px}
+.sc{font-size:11.5px;padding:2px 8px;border-radius:99px;background:var(--accBg);color:var(--acc);font-weight:500}
+.st{font-size:16.5px;font-weight:500}
+.tm{font-size:12px;color:var(--tx3);margin-left:auto}
+.goal{font-size:14px;color:var(--tx2);margin:0 0 14px;padding-left:11px;border-left:2px solid var(--line2)}
+.lbl{font-size:12px;font-weight:500;color:var(--tx2);margin:14px 0 6px}
+ol.do{margin:0;padding-left:20px;font-size:14px}
+ol.do li{margin-bottom:6px}
+ul.pl{margin:0;padding-left:20px;font-size:14px}
+ul.pl li{margin-bottom:5px}
+.pd{border:1px solid var(--line2);border-radius:8px;background:#fdfcf8;margin-top:14px}
+.pd summary{cursor:pointer;padding:10px 14px;font-size:13.5px;color:var(--acc);font-weight:500;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+.pd summary::-webkit-details-marker{display:none}
+.pd summary:before{content:"\25B8";font-size:11px}
+.pd[open] summary:before{content:"\25BE"}
+.pd summary:hover{background:#f7f5ee;border-radius:8px}
+.pdb{padding:0 14px 14px}
+.cpr{display:flex;justify-content:flex-end;margin-bottom:6px}
+.cp{font-size:12px;padding:4px 10px;border-radius:8px;border:1px solid var(--line2);background:#fff;color:var(--tx2);cursor:pointer}
+.cp:hover{border-color:var(--acc);color:var(--acc)}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:14px;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.6;white-space:pre-wrap;word-wrap:break-word;margin:0}
+.ok{font-size:13.5px;background:var(--grBg);color:#04342C;border-radius:8px;padding:9px 13px;margin-top:14px}
+.ok b{font-weight:500}
+.err{font-size:13.5px;background:var(--amBg);color:#412402;border-radius:8px;padding:9px 13px;margin-top:8px}
+.err b{font-weight:500}
+.info{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:16px 20px;font-size:14px;margin-bottom:16px}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Schritt-für-Schritt-Anleitung</h1>
+<p class="lead">Vom leeren Blatt bis zum veröffentlichten Post. Aufgebaut auf dem LinkedIn Power Workshop von Content Minds / Franz Wegner.</p>
+<p class="lead">Alle elf Prompts sind direkt an ihrem Schritt hinterlegt. Aufklappen, kopieren, weiterarbeiten.</p>
+
+<div class="toc">
+<h2>Aufbau</h2>
+<div><a href="#a">Block A — Setup</a> · einmalig, neun Schritte, rechne mit einer Woche nebenher</div>
+<div><a href="#b">Block B — Batch</a> · optional, zwei Schritte, alle zwei bis vier Wochen</div>
+<div><a href="#c">Block C — Der Post</a> · siebzehn Schritte, danach ist er live</div>
+<div><a href="#d">Block D — Danach</a> · sechs Schritte, damit der Aufwand sich verzinst</div>
+</div>
+
+<div class="info">Lies das einmal ganz durch, bevor du anfängst. Danach arbeitest du nur noch die Schritte ab. Wenn Block A schon steht, springst du direkt zu <a href="#c">Block C</a>.</div>
+
+<div class="bh" id="a"><div class="bt">Block A — Setup</div><div class="bm">Einmalig. Danach fasst du das monatelang nicht mehr an.</div></div>
+
+<div class="s">
+<div class="sh"><span class="sc">A1</span><span class="st">101er-Liste zum Fragenraster umbauen</span><span class="tm">45 bis 60 Minuten</span></div>
+<p class="goal">Aus 101 allgemeinen Blickwinkeln wird eine Liste von Fragen, die nur dein Geschäft betreffen. Das ist der Unterschied zwischen einem beliebigen Interview und einem, aus dem Content fällt.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Öffne die 101er-Ideenliste aus Tag 1 in einem Dokument.</li>
+<li>Geh jeden der 101 Punkte einmal durch und markiere in drei Farben: grün heißt „das habe ich konkret erlebt", gelb heißt „darüber könnte ich nachdenken", rot heißt „passt nicht zu mir".</li>
+<li>Lösche alles Rote. Erfahrungsgemäß bleiben 25 bis 40 Punkte übrig. Wenn mehr als 60 übrig bleiben, warst du zu großzügig.</li>
+<li>Formuliere jeden verbliebenen Punkt in eine Frage um, die sich nicht mit einem Satz beantworten lässt. Aus „Teile deine größten beruflichen Fehler" wird zum Beispiel „Welcher Fehler hat mich am meisten Geld gekostet, und was ist danach konkret passiert?"</li>
+<li>Sortiere die Fragen so, dass die leichten oben stehen. Du redest dich damit warm.</li>
+<li>Speichere die Datei als <code>Fragenraster</code> im selben Ordner, in dem später die Datenbank liegt.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> 25 bis 40 Fragen dastehen und jede mit einem Fragezeichen endet.</div>
+<div class="err"><b>Typischer Fehler:</b> Fragen stehen lassen, die man mit ja oder nein beantworten kann. Die liefern im Interview zwei Sätze und dann Stille.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A2</span><span class="st">Voice-Interview führen</span><span class="tm">60 bis 90 Minuten</span></div>
+<p class="goal">Rohmaterial in deiner eigenen Sprache. Das ist der Rohstoff für alles Weitere, inklusive deines Sprachprofils.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Such dir einen Ort, an dem dich 90 Minuten niemand stört. Handy laden.</li>
+<li>Starte parallel eine lokale Aufnahme, also Sprachmemo auf dem Handy oder Audacity am Rechner. Das ist deine Sicherung.</li>
+<li>Öffne die ChatGPT-App im Voice-Modus und gib den Prompt unten ein, mit deiner Branche im Platzhalter.</li>
+<li>Leg dein Fragenraster daneben. Nach dem Einstieg steuerst du selbst: „Frag mich jetzt etwas zu …" Du bist der Regisseur, nicht die KI.</li>
+<li>Wichtigste Regel beim Reden: immer Namen, Zahlen, Orte und Zeitpunkte nennen. „Ein Kunde" ist wertlos. „Ein Maschinenbauer mit 80 Leuten, im dritten Quartal" ist verwertbar.</li>
+<li>Wenn du dich wiederholst, red einfach weiter. Doppelungen kosten nichts, Lücken schon.</li>
+<li>Nach spätestens 90 Minuten aufhören. Ein zweites Interview an einem anderen Tag bringt mehr als ein dreistündiges.</li>
+</ol>
+<details class="pd"><summary>Prompt 1 — Voice-Interview</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist ein Podcast-Host und interviewst mich zu meinen Erfahrungen in der [DEINE BRANCHE]. Stell mir kritische Rückfragen zu konkreten Kundenerlebnissen.</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> mindestens 60 Minuten Audio vorliegen, in denen konkrete Situationen mit Zahlen vorkommen.</div>
+<div class="err"><b>Typischer Fehler:</b> In Thesen reden statt in Geschichten. Wenn du merkst, dass du allgemein wirst, sag dir selbst „ein Beispiel dafür war" und erzähl weiter.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A3</span><span class="st">Transkribieren</span><span class="tm">15 Minuten Arbeit</span></div>
+<p class="goal">Aus Audio wird Text, mit dem die KI arbeiten kann.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Nimm Vibe, wenn du kostenlos und lokal arbeiten willst. Nimm Descript, wenn du regelmäßig über 20 Stunden Material im Monat hast.</li>
+<li>Lade die lokale Datei hoch, nicht den Cloud-Mitschnitt.</li>
+<li>Warte die Rechenzeit ab und exportiere den Text.</li>
+<li>Lies das Transkript <em>nicht</em> Korrektur. Tippfehler und Versprecher stören die KI nicht, kosten dich aber eine Stunde.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> der Text als Datei vorliegt.</div>
+<div class="err"><b>Typischer Fehler:</b> Nur mit einem Cloud-Recorder aufnehmen. Bricht die Verbindung ab, ist die ganze Stunde weg.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A4</span><span class="st">Wissensdatenbank anlegen</span><span class="tm">20 Minuten</span></div>
+<p class="goal">Ein fester Ort, aus dem die KI schöpft. Ohne ihn sitzt du bei jedem Post wieder vor einem weißen Blatt.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Leg einen Ordner im Cloud-Speicher an, zum Beispiel <code>Content-Datenbank</code>. Nicht im Chatverlauf, der ist nach zwei Wochen unauffindbar.</li>
+<li>Ein Dokument pro Interview, mit Datum im Dateinamen.</li>
+<li>Leg ein zweites Dokument <code>Zahlen und Fakten</code> an: deine Kennzahlen, Preise, Projektergebnisse, Referenzen, Marktdaten. Ohne das erfindet die KI Zahlen, und die stehen dann in deinem Post.</li>
+<li>Leg ein drittes Dokument <code>Sammelstelle</code> an. Hier landet ab sofort alles, was dir unterkommt: Screenshots, Kundenmails, Sätze aus Meetings, Dinge die dich aufregen. Zwei Minuten pro Fundstück.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> drei Dokumente an einem Ort liegen, den du in vier Wochen ohne Suchen wiederfindest.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A5</span><span class="st">Sprachprofil erstellen</span><span class="tm">20 Minuten</span></div>
+<p class="goal">Ein Dokument, das beschreibt, wie du redest. Es ist die Grundlage jedes späteren Textes und der Grund, warum deine Posts nicht nach KI klingen.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Wähle ein Modell mit großem Kontextfenster, damit das ganze Transkript hineinpasst.</li>
+<li>Setze den Prompt unten ein und trage Name und Branche in die Platzhalter.</li>
+<li>Häng das komplette Transkript aus A3 an. Wenn du mehrere Interviews hast, alle.</li>
+<li>Lies das Ergebnis durch und stell dir eine Frage: Erkenne ich mich hier wieder? Wenn es zu freundlich und glatt klingt, schieb nach: „Das ist zu geglättet. Nimm die Kanten wieder rein und zitiere mich wörtlich."</li>
+<li>Speichere das Ergebnis als <code>Tone of Voice</code>. Du brauchst es in Schritt C13 bei jedem einzelnen Post.</li>
+</ol>
+<details class="pd"><summary>Prompt 2 — Sprachprofil erstellen</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist ein absoluter Experte für Personal Branding, Verkaufspsychologie und High-End LinkedIn Ghostwriting. Deine Spezialität ist es, die exakte "Brand Voice" (Stimme, Tonalität, Rhythmus, Vokabular und Persönlichkeit) von Personen aus unstrukturierten Gesprächstranskripten herauszufiltern und zu systematisieren.
+
+Dein Ziel ist es, aus den unten zur Verfügung gestellten Transkripten/Texten ein umfassendes, präzises und tiefgründiges "Sprach- und Persönlichkeitsprofil" für einen Copywriter zu erstellen. Dieses Briefing muss so genau sein, dass ein fremder Autor sofort im exakten Stil des Kunden schreiben kann, ohne dass es generisch oder künstlich wirkt.
+
+Hier sind die Eckdaten des Kunden:
+Name des Kunden: [Name des Kunden einfügen]
+Branche / Bereich: [Branche einfügen]
+
+### DEINE AUFGABE:
+Analysiere die unten eingefügten Transkripte tiefgründig. Achte auf:
+- Wiederkehrende Phrasen und Füllwörter.
+- Den Satzbau (kurz/knackig vs. lang/erklärend).
+- Die emotionale Grundhaltung (z.B. aggressiv-motivierend, ruhig-analytisch, zynisch-realistisch).
+- Werte und Glaubenssätze, die in den Aussagen mitschwingen.
+
+Erstelle basierend auf dieser Analyse ein Briefing, das EXAKT der folgenden Struktur entspricht. Nutze Formatierungen (Fettungen, Listen, Tabellen) für maximale Lesbarkeit.
+
+---
+### STRUKTUR DES OUTPUTS:
+
+# Sprach- und Persönlichkeitsprofil: [Name des Kunden]
+
+## 1. Die Kern-Persona: "[Finde einen passenden, knackigen Archetyp-Titel]"
+Schreibe 1-2 Absätze über den Background, die innere Antriebskraft und den Archetyp des Kunden. Wie tickt er? Was ist seine Philosophie?
+Füge am Ende ein fiktives oder echtes "Leitmotiv / Zitat" hinzu, das seine Einstellung auf den Punkt bringt.
+
+## 2. Sprachstil & Tonalität
+Unterteile in "Grundton" und "Satzbau".
+- Grundton: Beschreibe 4 Adjektive/Eigenschaften seines Stils im Detail.
+- Satzbau: Nutzt er kurze Sätze? Viele "Weil"-Konstruktionen? Spricht er oft in direkter Rede/Szenen ("Dann sagt der Kunde...")?
+
+## 3. Wortwahl & Vokabular
+- Go-Wörter (Typische Begriffe): Liste Lingo, Fachbegriffe, Werte-Begriffe und vor allem SEINE typischen Füllwörter auf.
+- No-Go-Wörter & Phrasen (Vermeiden!): Welche Wörter würden absolut unnatürlich oder zu "Corporate/Behörde" für ihn klingen?
+
+## 4. Humor & Ironie
+Besitzt der Kunde Humor? Wenn ja, welchen? Erstelle 2 Kategorien und gib kurze Beispiele, wie sich das äußert.
+
+## 5. Konkrete Beispiele & Analysen
+Nimm 3 starke, echte Zitate aus dem Transkript.
+Format pro Beispiel:
+- **[Name] Original:** "[Originalzitat]"
+- **Analyse:** Warum sagt er das so? Was zeigt das über seine Positionierung und Haltung?
+
+## 6. Extrapolierte Beispiele für Content (Briefing-Hilfe)
+Erstelle 3 fiktive LinkedIn-Post-Auszüge (Szenarien) für typische Branchenthemen, geschrieben in SEINER exakten Stimme.
+Format:
+- **Szenario:** [Thema]
+- **[Name] würde sagen:** "[Absatz im perfekten Ghostwriting-Stil der Persona]"
+
+## 7. Zusammenfassung der "Do's & Don'ts" für den Copywriter
+Erstelle eine Tabelle mit zwei Spalten: "Do's (Mach es so)" und "Don'ts (Lass das bloß weg)". Fülle sie mit 4-5 kontrastierenden Punkten.
+Schließe das Briefing mit einem Satz ab: "**Schlüssel zur Persona:** [Name] ist der [Zusammenfassende Metapher], der..."
+
+---
+### WICHTIGE REGELN FÜR DICH ALS KI:
+- Erfinde keine Eigenschaften, die nicht im Text angelegt sind, aber extrapoliere logisch aus den vorhandenen Daten.
+- Sei schonungslos ehrlich in der Analyse. Wenn der Kunde arrogant, umgangssprachlich oder extrem nerdig klingt, schreib das genau so ins Briefing. Glätte seine Kanten NICHT! Ein guter Ghostwriter braucht die echten Kanten.
+
+HIER SIND DIE TRANSKRIPTE/MATERIALIEN:
+[Füge hier alle Transkripte, Notizen oder Sprachnachrichten ein]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> du beim Lesen mindestens zweimal denkst: so rede ich wirklich.</div>
+<div class="err"><b>Typischer Fehler:</b> Das Profil ungeprüft abspeichern. Jeder Fehler darin vervielfältigt sich später in jedem einzelnen Post.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A6</span><span class="st">Arbeitsordner einrichten</span><span class="tm">15 Minuten</span></div>
+<p class="goal">Alles an einem Ort, damit du pro Post nicht suchst. Die Prompts selbst musst du nicht mehr sammeln, die stehen in dieser Anleitung an ihrem jeweiligen Schritt.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Leg im selben Ordner wie die Datenbank drei weitere Dateien an: <code>Tone of Voice</code> aus A5, <code>Gewinner-Register</code> aus A7 und <code>Ideenliste</code> für später.</li>
+<li>Setz ein Lesezeichen auf diese Anleitung. Sie ist deine Prompt-Quelle.</li>
+<li>Merke dir eine Regel: Wenn du einen Prompt für dich verbesserst, speicher die geänderte Fassung als eigene Datei ab. Sonst ist die Verbesserung beim nächsten Post wieder weg.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> Datenbank, Sprachprofil und Register nebeneinander in einem Ordner liegen.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A7</span><span class="st">Benchmark festlegen</span><span class="tm">10 Minuten</span></div>
+<p class="goal">Eine Zahl, ab der ein Post für dich als Gewinner gilt. Ohne sie kannst du später nicht entscheiden, was du recycelst.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Sieh nach, wie viele Follower du hast.</li>
+<li>Such die passende Zeile aus der Shield-Index-Tabelle von Tag 4 heraus, mit den Spalten Normal, Gut, Top und Viral.</li>
+<li>Leg eine Datei <code>Gewinner-Register</code> an und schreib diese Zeile ganz oben hinein.</li>
+<li>Setz deinen Threshold zunächst auf die Spalte „Gut". Sobald du dreißig eigene Posts gemessen hast, ersetzt du die Tabelle durch dein eigenes Mittel.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> eine konkrete Zahl dasteht, ab der du einen Post als Gewinner behandelst.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A8</span><span class="st">3-3-3 Shooting</span><span class="tm">2 bis 3 Stunden</span></div>
+<p class="goal">Ein Bildvorrat, der Monate hält. Danach musst du nie wieder für einen einzelnen Post ein Foto machen.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Blocke einen Termin und organisier ein Stativ oder eine zweite Person.</li>
+<li>Drei Locations: zum Beispiel Büro, draußen, neutrale Wand.</li>
+<li>Drei Outfits, deutlich unterschiedlich in der Farbe. Gleiche Farbtöne wirken später wie derselbe Tag.</li>
+<li>Drei Posen je Kombination: neutral, kritisch mit verschränkten Armen, offen und lachend. Die kritische Pose brauchst du für jeden Hot Take.</li>
+<li>Serienaufnahme nutzen und dich dabei leicht bewegen. So entstehen hunderte Varianten statt drei Bilder.</li>
+<li>Mach zusätzlich zehn Aufnahmen mit einem Gegenstand in der Hand. Dafür den Gesichts-Autofokus ausschalten und manuell auf den Gegenstand scharfstellen, sonst fokussiert die Kamera immer dich.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> mehrere hundert Rohbilder auf der Karte sind.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">A9</span><span class="st">Bilder aussortieren</span><span class="tm">45 Minuten</span></div>
+<p class="goal">Ein sortierter Pool, aus dem du später in dreißig Sekunden das passende Bild ziehst.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Alles in ein Tool laden, zum Beispiel Darktable oder Lightroom.</li>
+<li>Ein einziger schneller Durchgang, rein nach Bauchgefühl. Nicht zweimal ansehen.</li>
+<li>Einziges Kriterium: Gesicht und Pose. Falten im Hemd, unordentlicher Hintergrund und schiefes Licht sind egal, das repariert KI später in Sekunden. Der Gesichtsausdruck muss sitzen.</li>
+<li>Behalte 30 bis 50 Bilder und leg sie in Ordner nach Emotion ab: neutral, kritisch, freudig, nachdenklich.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> die Ordner nach Emotion benannt sind. Genau danach greifst du in Schritt C15 zu.</div>
+</div>
+
+<div class="bh" id="b"><div class="bt">Block B — Batch</div><div class="bm">Optional. Wenn du nur einen Post pro Woche schreibst, überspring das und starte bei C1.</div></div>
+
+<div class="s">
+<div class="sh"><span class="sc">B1</span><span class="st">Ideenliste generieren</span><span class="tm">20 Minuten</span></div>
+<p class="goal">80 bis 150 Ideen aus deinem eigenen Material. Ersetzt die 101er-Liste als Ideenquelle, sobald deine Datenbank steht.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Setz den Prompt unten ein und häng das Transkript aus A3 an.</li>
+<li>Kopier den kompletten Output in ein Dokument <code>Ideenliste</code> mit Datum.</li>
+<li>Überflieg die Liste einmal, ohne zu bewerten. Bewertet wird in B2.</li>
+</ol>
+<details class="pd"><summary>Prompt 3 — Ideenliste aus der Datenbank</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist ein erfahrener Content-Stratege und Copywriter für LinkedIn. Ich übergebe dir gleich ein Interview-Transkript. In diesem Transkript stellt ein Ghostwriter/Interviewer gezielte Fragen an einen Kunden, um Content-Ideen zu sammeln.
+
+Bitte gehe in zwei Schritten vor:
+
+**Schritt 1: Kontext & Content-Säulen analysieren**
+Gehe das Transkript aufmerksam durch und erkenne eigenständig folgende Punkte:
+1. Wer ist der Kunde (Sprecher) und in welcher Nische/Branche/Position ist er tätig?
+2. Wer ist die interviewende Person (Ghostwriter)?
+3. Leite basierend auf den Aussagen des Kunden 3 bis 5 übergeordnete Content-Säulen ab (z.B. Persönliche Einblicke, Fachwissen, Branchen-Insights etc.).
+
+**Schritt 2: Ideenliste generieren**
+Filtere nun aus den Inhalten und Aussagen des Kunden einzelne Aspekte heraus, die Potenzial für Social-Media-Beiträge auf LinkedIn haben.
+
+Erstelle mir daraus eine umfassende Ideenliste mit 80 bis 150 potenziellen Ideen. Beachte dabei zwingend folgende Vorgaben:
+
+- **Kategorisierung:** Ordne die Ideen übersichtlich den im ersten Schritt identifizierten Content-Säulen zu.
+- **Benennung:** Formuliere jede Idee als einen "SEO-Blogartikel-artigen Titel". Ich muss auf den ersten Blick sofort erkennen können, worum es in dem potenziellen Beitrag geht.
+- **Variationen (Angles):** Du darfst dich bei den Grundthemen ruhig doppeln, solange du verschiedene Perspektiven/Angles zu denselben Themen lieferst. Das Ganze soll mir als breite Inspiration dienen.
+- **Formatierung:** Liefere mir die fertige Liste strikt nummeriert zurück, damit ich die Ideen später einfach und sauber herauskopieren kann.
+
+Hier ist das Transkript:
+[HIER TRANSKRIPT EINFÜGEN]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> mindestens 80 nummerierte Titel dastehen, gruppiert nach Content-Säulen.</div>
+<div class="err"><b>Typischer Fehler:</b> Ein Modell mit kleinem Kontextfenster nutzen. Dann bricht die Liste bei dreißig Einträgen ab. Teil das Transkript in zwei Hälften und lass zweimal laufen.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">B2</span><span class="st">Selektieren</span><span class="tm">20 Minuten</span></div>
+<p class="goal">Aus der langen Liste werden 8 bis 15 Posts, die du tatsächlich schreibst.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Geh die Liste durch und prüfe jede Idee an drei Fragen: Habe ich dazu eine konkrete Geschichte mit Zahlen? Habe ich dazu eine Meinung? Würde sich jemand daran reiben?</li>
+<li>Nur was mindestens zweimal ja ergibt, wird markiert.</li>
+<li>Markier 8 bis 15 Stück. Mehr schaffst du in einem Batch nicht.</li>
+<li>Leg für jede markierte Idee ein eigenes Dokument oder einen eigenen Tab an, mit dem Titel als Überschrift.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> 8 bis 15 leere Dokumente mit Titeln dastehen.</div>
+</div>
+
+<div class="bh" id="c"><div class="bt">Block C — Der Post</div><div class="bm">Hier entsteht der Beitrag. C1 bis C8 ist Kopfarbeit, C9 bis C17 ist Ausführung. Im Batch machst du C1 für alle Posts, dann C2 für alle, und so weiter.</div></div>
+
+<div class="s">
+<div class="sh"><span class="sc">C1</span><span class="st">Kernaussage und Emotion festlegen</span><span class="tm">5 Minuten</span></div>
+<p class="goal">Die Entscheidung, worum es geht und wie sich der Leser danach fühlen soll. Diese Entscheidung triffst du, nicht die KI.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Schreib unter den Titel einen einzigen Satz, der so anfängt: „Nach diesem Post soll der Leser denken: …"</li>
+<li>Wähl genau eine der sieben Emotionen: lustig, wütend, süß, beeindruckend, Aha-Moment, sehe ich auch so, Applaus.</li>
+<li>Als Orientierung: wütend und „sehe ich auch so" ziehen Kommentare. Aha-Moment und Applaus ziehen Likes und Speicherungen.</li>
+<li>Notier die Emotion als Wort im Dokument. Du brauchst sie in C11 wieder und gibst sie dort explizit vor.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> ein Satz und ein Wort im Dokument stehen.</div>
+<div class="err"><b>Typischer Fehler:</b> Zwei Botschaften in einem Post. Wenn dein Satz ein „und" enthält, hast du zwei Posts. Teil sie.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C2</span><span class="st">Info-Dump</span><span class="tm">5 bis 10 Minuten</span></div>
+<p class="goal">Alles aus dem Kopf heraus, ohne Struktur. Der Rohstoff für das Briefing.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Sprich eine Sprachnachricht an dich selbst, drei bis acht Minuten.</li>
+<li>Erzähl der Reihe nach: Was ist passiert, wer war beteiligt, welche Zahlen gab es, was hat dich daran geärgert oder gefreut, was war dein Learning.</li>
+<li>Nicht strukturieren, nicht neu ansetzen, nicht löschen. Umwege sind erlaubt.</li>
+<li>Transkribier die Nachricht und kopier den Text unter den Titel ins Dokument.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> unter dem Titel ein unsortierter Rohtext steht.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C3</span><span class="st">Briefing erzeugen</span><span class="tm">5 Minuten, davon meist Wartezeit</span></div>
+<p class="goal">Aus dem Chaos werden zwölf sortierte Bausteine, aus denen du später wie mit Lego baust.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Nimm den Prompt unten und unbedingt ein Thinking-Modell. Schnelle Modelle verlieren bei der Menge an Anweisungen die Hälfte.</li>
+<li>Trag als „Grobe Idee" deinen Titel ein und als „Info-Dump" das Transkript aus C2.</li>
+<li>Kopier den kompletten Output ins Dokument.</li>
+<li>Geh jetzt gezielt Abschnitt 3 (Zahlen und Daten) und Abschnitt 8 (Zitate) durch. Genau dort recherchiert die KI selbstständig, und genau dort erfindet sie. Streich alles, was du nicht belegen kannst.</li>
+</ol>
+<details class="pd"><summary>Prompt 4 — Briefing-Assistent</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>KI: LinkedIn Briefing-Assistent.
+Ziel: Erstelle ein umfassendes Briefing für einen LinkedIn-Post aus einer groben Idee und einem Info-Dump.
+
+Workflow:
+1. Analysiere die unten folgende "Grobe Idee" und den "Info-Dump".
+2. Nutze die bereitgestellten Informationen als Basis für das Briefing.
+3. WICHTIG: Fülle fehlende Informationen für die Briefing-Abschnitte (außer Kernaussagen) aktiv auf. Recherchiere dafür im Internet (für Zahlen, Daten, Zitate, Probleme, Statistiken) und nutze dein Allgemeinwissen. Ziel ist es, aus wenigen Ausgangsinformationen ein reichhaltiges, verwertbares Briefing zu erstellen.
+4. Erstelle das Briefing gemäß der folgenden Struktur. Sprache: klar, menschlich, auf den Punkt, ohne Füllwörter.
+
+Briefing-Abschnitte:
+1. Titel (LinkedIn-Hook): Prägnant, formuliere das Kernthema als fesselnden Einstieg für einen LinkedIn-Beitrag.
+2. Kernaussagen: Die wichtigsten Botschaften und Thesen, ausschließlich basierend auf dem Info-Dump. (Für diesen Punkt keine Recherche durchführen, nur zusammenfassen, was gesagt wurde).
+3. Zahlen/Daten (Recherchiere falls nötig): Liste 2-3 konkrete, relevante Statistiken oder Fakten zum Thema auf, die die Kernaussagen untermauern.
+4. Probleme/Risiken (Recherchiere falls nötig): Identifiziere die zentralen Probleme, Herausforderungen oder Risiken, die mit dem Thema verbunden sind.
+5. Falschannahmen/Mythen (Recherchiere falls nötig): Entkräfte Mythen aus dem Info-Dump. Falls keine genannt werden, finde 2-3 plausible, weit verbreitete Mythen zum Thema und kennzeichne sie als "potenziell".
+6. Lösungen: Liste die im Info-Dump vorgeschlagenen Lösungen auf. Falls keine genannt werden, schlage 2-3 plausible, umsetzbare Lösungen vor und kennzeichne sie als "Vorschlag".
+7. Beispiele/Analogien/Geschichten: Fasse genannte Beispiele zusammen.
+8. Zitate (3-5, recherchiere falls nötig): Finde prägnante, inspirierende oder provokante Zitate von Experten oder bekannten Persönlichkeiten, die zum Thema passen.
+9. Produktwerbung: Falls im Info-Dump ein Produkt oder eine Dienstleistung als Lösung erwähnt wird: Beschreibe kurz, wie es das identifizierte Problem löst.
+10. Diskussionspunkte: Formuliere 3-5 offene Fragen, die in den Kommentaren zur Interaktion anregen.
+11. Randinfos: Nenne weitere hilfreiche oder erwähnenswerte Aspekte aus deiner Recherche oder deinem Allgemeinwissen.
+12. Zustimmbare Aussagen (5 Varianten): Formuliere 5 allgemeingültige, leicht zustimmbare Thesen, die auf dem Inhalt basieren. Ideal als Hooks, Thesen oder Endaussagen im Kalenderspruch-Stil.
+
+---
+
+Grobe Idee:
+[HIER DIE EINZEILIGE, GROBE IDEE EINFÜGEN]
+
+Info-Dump:
+[HIER DEINEN INFO-DUMP EINFÜGEN (UNSORTIERTER TEXT, SPRACHNACHRICHT-TRANSKRIPT, STICHPUNKTE)]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> zwölf Abschnitte im Dokument stehen und du jede Zahl darin verantworten kannst.</div>
+<div class="err"><b>Typischer Fehler:</b> Erfundene Statistiken ungeprüft übernehmen. Das fällt in den Kommentaren auf, und zwar sofort.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C4</span><span class="st">Wette markieren</span><span class="tm">3 Minuten</span></div>
+<p class="goal">Die eine Information, auf die der ganze Post gebaut wird. Ohne diese Entscheidung wird der Text beliebig.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Lies das Briefing einmal durch und such die Stelle, bei der du selbst kurz hängen bleibst.</li>
+<li>Markier sie farbig oder kopier sie nach ganz oben.</li>
+<li>Mach den Gegentest: Würdest du genau das jemandem beim Mittagessen als Erstes erzählen? Wenn nein, such weiter.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> genau eine Stelle markiert ist.</div>
+<div class="err"><b>Typischer Fehler:</b> Drei Stellen markieren. Dann trägt keine davon den Post.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C5</span><span class="st">Master-Muster wählen</span><span class="tm">2 Minuten</span></div>
+<p class="goal">Die Verpackung für deine Wette. Vier Muster, je zwei Varianten.</p>
+<div class="lbl">Entscheidungshilfe</div>
+<ul class="pl">
+<li>Deine Wette ist eine Meinung oder Haltung → Muster 1, Reibungsfläche</li>
+<li>Deine Wette ist eine Szene, ein Dialog oder eine ungewöhnliche Aktion → Muster 2, Kopfkino</li>
+<li>Deine Wette ist ein Zahlenunterschied oder ein Widerspruch → Muster 3, analytischer Sog</li>
+<li>Deine Wette ist ein Problem, eine Liste oder eine Abkürzung → Muster 4, Schmerz und Retter</li>
+</ul>
+<div class="lbl">Danach</div>
+<ol class="do">
+<li>Entscheide innerhalb des Musters zwischen Variante A und B. Bei Muster 1 zum Beispiel: heikler Take (A) oder unstrittige Wahrheit (B).</li>
+<li>Notier beides im Dokument.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> Muster und Variante notiert sind.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C6</span><span class="st">Drei Hooks generieren</span><span class="tm">3 Minuten</span></div>
+<p class="goal">Drei Rohfassungen der ersten Zeilen. Die Hook entscheidet, ob überhaupt jemand weiterliest.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Nimm den Prompt unten, wieder mit Thinking-Modell.</li>
+<li>Trag ganz unten ein: deine Wette aus C4, die Kernaussage und die Emotion aus C1.</li>
+<li>Gib das Muster aus C5 bewusst <em>nicht</em> vor. Lass die KI selbst wählen und vergleich dann. Weicht ihre Wahl von deiner ab, ist das ein ernstzunehmender Hinweis.</li>
+<li>Kopier alle drei Optionen samt Begründung ins Dokument.</li>
+</ol>
+<details class="pd"><summary>Prompt 5 — Hook-Generator (enthält die 4 Master-Muster)</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist ein hochkarätiger LinkedIn Ghostwriter, spezialisiert auf virale B2B-Hooks. Deine Aufgabe ist es, für ein vorgegebenes Thema oder eine Kernaussage drei unterschiedliche, hochkonvertierende LinkedIn-Hooks zu schreiben.
+
+Ein "Hook" sind die allerersten 1 bis 3 Zeilen eines LinkedIn-Posts. Sie entscheiden darüber, ob jemand weiterscrollt oder auf "mehr anzeigen" klickt.
+
+WICHTIGE REGELN FÜR DIE GENERIERUNG:
+1. Wähle aus den unten stehenden "4 Master-Mustern" genau die 3 Varianten aus, die VOM KONTEXT HER am besten zum vorgegebenen Thema passen. Nicht jedes Muster passt zu jedem Thema.
+2. Vermeide jegliches Floskel-Deutsch ("In der heutigen Zeit...", "Ich freue mich...").
+3. Orientiere dich an der Tonalität und Mechanik der Beispiele, schreibe sie aber nicht einfach 1:1 um.
+
+---
+HIER SIND DIE 4 MASTER-MUSTER UND IHRE PRINZIPIEN:
+
+Muster 1: Die Reibungsfläche (Emotion & Haltung)
+Hier beziehst du extrem klar Stellung. Das Ziel ist es, dass der Leser sofort nicken muss oder sich aufregt.
+
+- Variante A (Heikle Takes): Provoziere mit einer harten Wahrheit oder greife eine unpopuläre Meinung auf.
+  Beispiele für die Bandbreite:
+  * "Ist es eigentlich respektlos, einen Calendly-Link zu verschicken?"
+  * "Die harte Wahrheit in München ist: Unternehmen stellen dich nicht ein, wenn du (noch) keine Wohnung hast."
+  * "Eine Standard-Antwort ist immer noch besser als keine Antwort. Auch wenn die Antwort: "Nein!" ist. Ganz ehrlich:"
+
+- Variante B (Agreeable Hooks): Sprich eine absolute, frustrierende Wahrheit aus, die jeder in der Branche denkt, aber keiner sagt.
+  Beispiele für die Bandbreite:
+  * "Bewerbungsprozesse dauern in Deutschland zu lange."
+  * "Wer alle 6 Monate den Job wechselt, ist für den Arbeitsmarkt UNBRAUCHBAR. Punkt."
+  * "Die Wahrheit ist: LinkedIn hat komplett die Bodenhaftung verloren."
+
+Muster 2: Das Kopfkino (Story & Szene)
+Hier startest du mitten in der Handlung ("In Media Res") und brichst das typische B2B-Muster durch greifbare Bilder und Situationen.
+
+- Variante A ("Als wäre ich dabei"): Beginne direkt mit wörtlicher Rede, einem Dialog oder einer Szene. Keine Einleitung!
+  Beispiele für die Bandbreite:
+  * "Chef: "Ich hab beim Kandidaten ein schlechtes Bauchgefühl." Team: "Wir lieben den. Unbedingt einstellen!" Wer hat recht?"
+  * "Der Kandidat betrat unser Büro für das Vorstellungsgespräch. Ein Blick auf den Lebenslauf, ein Blick zur Tür. Schock:"
+  * "Freitag, 16 Uhr. Das Telefon klingelt. "Wir brauchen dringend eine Fachkraft! Es brennt!""
+
+- Variante B (Ich habe etwas Krasses gemacht): Berichte von einem echten, oft ungewöhnlichen Experiment, einer extremen Entscheidung oder einer konkreten Aktion ("Skin in the game").
+  Beispiele für die Bandbreite:
+  * "Für schlappe 4.899 € bin ich seit 6 Monaten stolzer Besitzer einer BahnCard 100"
+  * "Alle zwei Wochen kaufe ich 40 kg Äpfel beim Großhändler. Jeden Tag aß ich 15 Stück. Warum?"
+  * "Ich habe als Chef unbegrenzten Urlaub wie Netflix eingeführt. Und das ist danach passiert:"
+
+Muster 3: Der analytische Sog (Logik & Neugier)
+Du präsentierst dem Gehirn ein Rätsel, einen Widerspruch oder einen Vergleich, den es auflösen MUSS.
+
+- Variante A (Vergleiche): Stelle zwei Gegensätze gegenüber.
+  Beispiele für die Bandbreite:
+  * "Top-Kandidat A bekommt 65.000 € Gehalt. Top-Kandidat B bekommt 72.000 € Gehalt. Was ist der Unterschied?"
+  * "Statt Porsche, fahre ich meinen 8 Jahre alten Skoda Kombi. Statt Chauffeur, reicht mein Klapprad für jede Strecke unter 1 Stunde. Ich bin reich."
+  * "Ich wertschätze einen Mitarbeiter mit 1.500 €. Ich wertschätze einen Mitarbeiter mit 3 Tage Sonderurlaub. Der Unterschied?"
+
+- Variante B (Curiosity Gap): Verbinde zwei Dinge, die logisch nicht zusammenpassen, oder kündige eine absurde Wendung an.
+  Beispiele für die Bandbreite:
+  * "Eine Kandidatin fragte nach 40.000 € im Bewerbungsgespräch. Obwohl die Stelle mit 45.000 € ausgeschrieben war..."
+  * "Eine Top-Kandidatin suchte 7 Monate lang erfolglos einen Job. Das Problem? Ihr Hund."
+  * "Die meisten Verträge scheitern wegen Lächerlichkeiten. Eine Kostprobe gefällig?"
+
+Muster 4: Purer Schmerz und Retter (Nutzen)
+Du drückst direkt in die Wunde der Zielgruppe und versprichst Heilung, Insights oder eine Abkürzung.
+
+- Variante A (Pain Point-Ansprache): Adressiere einen massiven Frustmoment direkt.
+  Beispiele für die Bandbreite:
+  * "Horror-Szenario: Der wichtigste Mitarbeiter kündigt. Die Antwort deutscher Unternehmer?"
+  * "Nach 30 Tagen keine passende Bewerber*in?"
+  * "Text kopiert aus ChatGPT und bei LinkedIn eingefügt? Plötzlich fehlende Absätze und unnötige Leerzeichen?"
+
+- Variante B (Listen und Value Drop): Kündige eine glasklare Übersicht an oder wache typische "Anti-Muster" ab.
+  Beispiele für die Bandbreite:
+  * "Menschen, von denen es in Deutschland zu viele gibt: Pascal, der argumentiert, man könne keine 8 Stunden konzentriert arbeiten."
+  * "6 LinkedIn Hacks für regelmäßig 10.000 Impressionen, die du noch nie gehört hast:"
+  * "Bitteschön: 6 Standardsätze aus Anschreiben und was sie wirklich heißen:"
+
+---
+
+DEINE AUFGABE:
+1. Lies das Thema / die Kernaussage / die Infos.
+2. Analysiere den Kontext und wähle die 3 Master-Muster/Varianten aus, die am besten geeignet sind, um dieses spezifische Thema spannend zu verpacken.
+3. Schreibe für jedes der 3 gewählten Muster eine perfekten Hook (1 bis maximal 3 Zeilen).
+
+FORMAT VORGABE FÜR DEINEN OUTPUT:
+Option 1: [Name des gewählten Musters & Variante]
+[Hook Text]
+(Kurze Begründung, warum du für dieses Thema genau dieses Muster gewählt hast und warum es psychologisch funktioniert)
+
+Option 2: [Name des gewählten Musters & Variante]
+[Hook Text]
+(Kurze Begründung)
+
+Option 3: [Name des gewählten Musters & Variante]
+[Hook Text]
+(Kurze Begründung)
+
+---
+HIER IST MEIN THEMA / MEINE KERNAUSSAGE / MEINE INFOS:
+[HIER DEIN THEMA ODER DEINE IDEE EINTRAGEN]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> drei Hooks mit Begründung dastehen.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C7</span><span class="st">Hook wählen und schärfen</span><span class="tm">10 Minuten</span></div>
+<p class="goal">Aus einer brauchbaren Hook wird eine, die im Feed stoppt. Das ist der Schritt mit dem größten Hebel im ganzen Ablauf.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Lies alle drei laut vor. Welche stoppt dich selbst? Nimm die. Die anderen zwei bleiben als Backup im Dokument.</li>
+<li>Jetzt vier Runden, jede einzeln, nicht alle gleichzeitig:</li>
+<li><b>Konkreter:</b> Ersetz jede vage Angabe durch eine Zahl, einen Betrag, einen Ort oder ein Datum. „Deutlich teurer" wird zu „18.000 Euro mehr".</li>
+<li><b>Einfacher:</b> Streich jedes Fachwort. Testfrage: Versteht das ein Viertklässler?</li>
+<li><b>Persönlicher:</b> Von „man" zu „ich". Die Reihenfolge der Wirkung ist ich, dann wir, dann du.</li>
+<li><b>Viral:</b> Kannst du an eine bekannte Marke, an Geld, Gesundheit, Liebe oder die Jobwelt andocken? Ein bekannter Aufhänger vervielfacht die Reichweite.</li>
+<li>Zähl die Zeilen. Maximal drei, danach klappt LinkedIn den Text zusammen.</li>
+<li>Wenn das Thema immer noch zu nischig wirkt, lass den Prompt unten laufen und wähl eine allgemeinere Ebene.</li>
+</ol>
+<details class="pd"><summary>Prompt 6 — Mainstreamisierung (nur bei Bedarf)</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre># Prompt: Themenabstraktion für Social Media
+
+## Deine Rolle
+Du bist ein Experte für Content-Strategie und Kommunikation. Deine Stärke liegt darin,
+die Essenz einer Botschaft zu erkennen und sie für verschiedene Zielgruppen verständlich
+und relevant zu machen.
+
+## Deine Aufgabe
+Analysiere den untenstehenden Social-Media-Beitrag. Deine Aufgabe ist es,
+dessen Kernthema auf höhere, allgemeinere Ebenen zu abstrahieren.
+Das Ziel ist es, Ideen zu generieren, wie der Inhalt für ein breiteres Publikum
+(den "Mainstream") interessant gemacht werden kann, ohne die ursprüngliche Botschaft zu verfälschen.
+
+## Kriterien für deine Antwort
+1. **Kernthema identifizieren:** Benenne zuerst das zentrale, sehr spezifische Nischenthema des Beitrags.
+2. **Abstraktionslevel finden:** Leite aus diesem Kernthema 3 bis 4 aufeinander aufbauende,
+   immer allgemeinere Themenlevel ab. Jeder Schritt sollte das Thema für eine größere Gruppe von Menschen relevant machen.
+3. **Für jedes Level einen neuen Blickwinkel vorschlagen:** Gib für jedes Abstraktionslevel eine konkrete Idee
+   oder einen neuen "Angle" (Blickwinkel) an, wie man den Post gestalten könnte. Beschreibe,
+   welche neue Zielgruppe damit angesprochen wird.
+4. **Struktur:** Gliedere deine Antwort übersichtlich, z.B. so:
+
+   - **Nischenthema (Level 0):** [Das spezifische Thema des Posts]
+   - **Abstraktionslevel 1:** [Erstes allgemeineres Thema]
+       -> **Neuer Blickwinkel:** [Idee, wie man den Post unter diesem Thema präsentieren kann]
+   - **Abstraktionslevel 2:** [Zweites allgemeineres Thema]
+       -> **Neuer Blickwinkel:** [Idee...]
+   - **Abstraktionslevel 3:** [Sehr allgemeines, universelles Thema]
+       -> **Neuer Blickwinkel:** [Idee...]
+
+Wichtiger Hinweis:
+Schreibe den ursprünglichen Beitrag NICHT um.
+Deine Aufgabe ist es ausschließlich, die Analyse der Abstraktionslevel und die daraus resultierenden
+neuen Perspektiven aufzuzeigen, die als Inspiration für zukünftige Beiträge dienen können.
+
+---
+[HIER DEINEN SOCIAL-MEDIA-BEITRAG EINFÜGEN]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> die Hook höchstens drei Zeilen hat und mindestens eine konkrete Zahl oder einen Eigennamen enthält.</div>
+<div class="err"><b>Typischer Fehler:</b> Alle vier Fragen in einem Rutsch anwenden. Dann bleibt ein Satz übrig, der alles will und nichts trifft.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C8</span><span class="st">Bildkonzept festlegen</span><span class="tm">5 Minuten</span></div>
+<p class="goal">Die Entscheidung, was das Bild leisten soll. Sie fällt jetzt, nicht später, weil Bild und Hook zusammen wirken.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Beantworte eine Frage: Soll das Bild neugierig machen und zum Aufklappen bringen (Kategorie A), oder soll es für sich allein stehen und Verweildauer erzeugen (Kategorie B)?</li>
+<li>Faustregel: Ist deine Hook eine Story oder Meinung, nimm A. Ist deine Wette eine Liste, Tabelle oder nackte Zahl, nimm B.</li>
+<li>Wähl das konkrete Format. Kategorie A: Event-Selfie, Emotions-Porträt, Hero-Object, Splitscreen, A gegen B, Agreeable Statement, Cliffhanger. Kategorie B: Meme, Tabelle, geleaktes Dokument, Screenshot, Whiteboard, Infografik.</li>
+<li>Schreib einen Satz ins Dokument: was ist zu sehen, welcher Text steht gegebenenfalls drauf.</li>
+<li>Letzter Check: Wiederholt das Bild einfach nur den Text? Dann ändere es. Es soll ergänzen oder eine Neugierlücke öffnen.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> eine Zeile Bildbeschreibung im Dokument steht.</div>
+<div class="err"><b>Typischer Fehler:</b> Das Bild auf den Schluss schieben. Dann baust du irgendetwas Passendes drumherum statt etwas, das die Hook trägt.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C9</span><span class="st">Ränder schreiben</span><span class="tm">10 Minuten</span></div>
+<p class="goal">Schlusssatz und Frage stehen, bevor der Mittelteil existiert. Dadurch weiß der Text, wohin er läuft.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Lass den Prompt unten mit deiner Kernaussage laufen. Du bekommst 15 bis 20 Thesen.</li>
+<li>Wähl die eine, die inhaltlich zur Hook zurückführt. Der Post soll sich schließen wie eine Klammer.</li>
+<li>Jetzt der Call-to-Action. Zwei Varianten: die easy Frage mit Umfragecharakter, oder der leichte Vorwurf.</li>
+<li>Zuordnung: Ist deine Emotion aus C1 „wütend", nimm die Provokation. In allen anderen Fällen die easy Frage.</li>
+<li>Schreib Schlusssatz und Frage ans Ende des Dokuments.</li>
+</ol>
+<details class="pd"><summary>Prompt 7 — Agreeable Statements</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Erstelle 15 bis 20 kurze Thesen zum unten stehenden Kontext, die auf sofortige, fast schon automatische Zustimmung (ein inneres Nicken) ausgelegt sind.
+
+Die Thesen sollen als „Agreeable Statements" fungieren. Sie müssen so formuliert sein, dass sie bei Lesern eine starke emotionale Resonanz auslösen – sei es durch die Bestätigung einer weithin geteilten Überzeugung, das Aussprechen einer unangenehmen Wahrheit oder das treffende Artikulieren einer verbreiteten Frustration in der Arbeitswelt.
+
+Das Ziel ist es, durch prägnante und direkte Formulierungen ein hohes Maß an Identifikation und Interaktion zu erzeugen.
+
+## Wichtige Richtlinien für die Formulierung:
+- **Klares Feindbild / Kritik üben:** Nutze Formulierungen, die offensichtliche Missstände anprangern oder sich gegen überholte Praktiken und toxische Verhaltensweisen stellen.
+- **„Das geht so nicht"-Haltung:** Verwende Thesen, die eine klare Kante zeigen und sich weigern, den Status quo hinzunehmen.
+- **Direkt und Unmissverständlich:** Vermeide Konjunktive („man sollte", „es wäre besser"). Formuliere stattdessen als absolute, unumstößliche Wahrheiten.
+
+**Schlechte Beispiele (zu vermeiden):**
+- Wir sollten offener kommunizieren. (Zu schwach, kein klares Feindbild)
+- Es wäre besser, wenn Führungskräfte mehr loben würden. (Zu passiv, keine starke Haltung)
+- Vielleicht liegt es nicht immer am Mitarbeiter, wenn etwas schiefgeht. (Zu vage, weichgespült)
+
+**Gute Beispiele (als Inspiration):**
+- Ein 5-Gänge-Menü behebt keine Kulturprobleme.
+- Wer alle 6 Monate den Job wechselt, ist für den Arbeitsmarkt unbrauchbar. Punkt.
+- Dringend und billig schließt sich gegenseitig aus.
+- Eine schlechte Führungskraft zerstört ein gutes Team.
+- Überstunden sind kein Synonym für Erfolg!
+- Wer seinen Mitarbeitern den Krisenbonus zahlen kann, sollte es auch tun!
+- Wer nie widerspricht, hilft uns nicht weiter.
+- Ein Mitarbeiter, der mehr leistet, darf nicht weniger verdienen.
+- Gute Mitarbeiter kündigen die Führungskraft, nicht den Job.
+
+Kontext: [HIER POST/IDEE/KERNAUSSAGE EINFÜGEN]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> Schlusssatz und Frage dastehen, obwohl der Mittelteil noch leer ist.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C10</span><span class="st">Framework wählen</span><span class="tm">2 Minuten</span></div>
+<p class="goal">Die Struktur für den Mittelteil. Sechs Möglichkeiten, eine passt.</p>
+<div class="lbl">Zuordnung</div>
+<ul class="pl">
+<li>Du übersetzt Floskeln in ihre wahre Bedeutung → Matrix</li>
+<li>Du stellst zwei Fälle nebeneinander → Mirror</li>
+<li>Du demontierst einen Trend oder ein Hype-Thema → Unpopular Reality</li>
+<li>Du erzählst Durchhalten und eine Wendung → Grind</li>
+<li>Du brichst ein Tabu oder widerlegst ein Vorurteil → Rebel</li>
+<li>Du erzählst einen Fall und leitest daraus eine Regel ab → Blueprint</li>
+</ul>
+<div class="ok"><b>Fertig, wenn</b> der Name des Frameworks im Dokument steht.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C11</span><span class="st">Draft erzeugen</span><span class="tm">5 Minuten</span></div>
+<p class="goal">Der erste vollständige Text. Er wird noch nicht gut sein, aber vollständig.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Setz den Prompt unten ein. Das Modell antwortet mit „Ich bin ready" und wartet.</li>
+<li>Schick jetzt in <em>einer</em> Nachricht: das Briefing aus C3, die fertige Hook aus C7 mit dem Zusatz „diese Hook ist gesetzt, nicht ändern", die Emotion aus C1 als klare Vorgabe, das Framework aus C10, sowie Schlusssatz und CTA aus C9.</li>
+<li>Prüf das Ergebnis an zwei Stellen: Hat es deine Hook übernommen oder heimlich eine eigene gebaut? Und ist es unter 2.700 Zeichen?</li>
+<li>Wenn die Hook ersetzt wurde, weis es einmal an: „Nimm exakt meine Hook, unverändert."</li>
+</ol>
+<details class="pd"><summary>Prompt 8 — Draft schreiben</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist Experte für LinkedIn-Beiträge aus Transkripten/Gedanken. WICHTIG: Nach diesem Prompt antworte: "Ich bin ready." Warte dann aufs Transkript.
+
+ANLEITUNG
+
+1. Kernaussage & Emotion
+
+- Finde 1 zentrale Botschaft
+- Wähle 1 passende virale Emotion, optimiere Beitrag darauf. Gib Wahl an. (Nutzer kann Emotion vorgeben.)
+Lustig, Wütend, Süß, Beeindruckend, Aha-Moment, Sehe ich auch so, Applaus
+
+2. Hook (Erste 1-3 Zeilen)
+
+- Fesselndster Aspekt: Provokante Frage, Zahl/Statistik, Emotion, prägnanter Satz
+- Erstelle 3 Hook-Varianten (A, B, C) vor dem Beitrag
+
+3. Struktur Beitrag
+
+- Hook (stärkste Variante)
+- Kurze Einleitung (wenn nötig)
+- Hauptteil (Kerninfos klar)
+- Klares Fazit
+- CTA: Offene Frage zur Diskussion
+
+4. Zeichenlimit: Max. 2700 Zeichen (prägnant kürzen)
+
+5. Inhalt & Integration
+
+- Zahlen: Hervorheben. Bei Andeutung ohne Nennung: Platzhalter wie [Zahl einfügen] oder [Prozent]% nutzen (im Output fett markieren, nicht im LinkedIn-Text)
+- Analogien/Geschichten: Mind. eine wirkungsvoll nutzen
+- Starke, zustimmbare Aussagen: Die allerstärkste an passender Stelle integrieren, WENN sie Beitrag aufwertet
+
+6. Stil & Ton
+
+- Wortlaut weitgehend beibehalten, keine steifen LLM-Formulierungen
+- Anrede (Du/Sie) beibehalten ("du" klein am Satzanfang/innen, "Sie" groß)
+- Keine LLM-Floskeln, übertriebene Adjektive, Synonymketten
+
+7. Satzbau & Zeichensetzung
+
+- Keine Gedankenstriche. Ersetze durch Kommas oder Satzteilung
+- Lange Sätze in kurze Hauptsätze teilen
+- Satzanfänge mit "Und", "Aber", "Oder" erlaubt (umgangssprachlich)
+- Keine unüblichen Kommas
+- Ausgeschriebene Ziffern beibehalten (z.B. "3 Dinge")
+
+8. Formatierung
+
+- Sinnvolle LinkedIn-Absätze
+- Hook-Abstand: 1-zeilig -> 2 Leerzeilen danach; 2/3-zeilig -> 1 Leerzeile danach
+- Nur Standardtext (kein Unicode-Fett/-Kursiv)
+- Nach Doppelpunkt groß beginnen (Bsp.: "Bedeutet: Ein Team.")
+
+9. Emojis
+
+- Max. 3 Emojis gesamt (exkl. Listenmarker)
+- Sinnvoll, menschlich einsetzen
+- Textemojis (:D, ;)) erlaubt
+- Listenmarker zählen nicht zum Limit
+- Nie: Rakete, Diamant, blaue Raute, Konfetti, Megafon, Pin, Funkeln.
+- Aufzählungen: Zahlen (1., 2.) oder Bindestrich (- ). Keine Zahlen-Emojis
+- Zeile mit Emoji: Emoji + Leerzeichen + Text
+- Emoji am Satzende: Punkt (.) davor weg. ?, ! bleiben
+- Hook nicht von Emojis umklammern
+
+10. Keine Hashtags
+
+11. Anrede: Keine generischen Anreden.
+Direkt mit Hook starten.
+
+Erwartetes Output-Format (wenn du Transkript verarbeitest):
+
+1. Gewählte Emotion: (z.B. Aha-Moment)
+2. Hook-Varianten: A) [Hook A] B) [Hook B] C) [Hook C]
+3. LinkedIn Beitrag: [Formatierter LinkedIn Beitrag]
+4. Zusätzliche Analysen:
+- Potenzielle Diskussionspunkte: (2-3 Punkte, die Kommentare auslösen könnten)</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> ein vollständiger Text unter 2.700 Zeichen dasteht, mit deiner Hook und deinem Schluss.</div>
+<div class="err"><b>Typischer Fehler:</b> Die Emotion nicht vorgeben. Der Prompt wählt dann selbst und überschreibt deine Entscheidung aus C1 stillschweigend.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C12</span><span class="st">Gegen die Prinzipien prüfen</span><span class="tm">3 Minuten</span></div>
+<p class="goal">Ein bewusster Kontrollblick, bevor du sprachlich polierst. In den Workshop-Unterlagen ist für diesen Schritt kein Prompt hinterlegt, deshalb machst du ihn von Hand.</p>
+<div class="lbl">Sechs Fragen an den Draft</div>
+<ul class="pl">
+<li>Steht direkt nach der Hook genug Kontext, damit der Post allein für sich verständlich ist?</li>
+<li>Gibt es eine Stelle, an der etwas auf dem Spiel steht, also Fallhöhe?</li>
+<li>Gibt es mindestens einen Open Loop, also eine Frage, deren Antwort erst später kommt?</li>
+<li>Sind Marken, Zahlen und Orte konkret benannt statt allgemein umschrieben?</li>
+<li>Wiederholt sich etwas, besonders am Ende?</li>
+<li>Gibt es eine unperfekte, menschliche Stelle, also einen Nebensatz, ein Eingeständnis, eine kleine Selbstironie?</li>
+</ul>
+<div class="ok"><b>Fertig, wenn</b> du auf die ersten fünf Fragen zufrieden antworten kannst und auf die sechste mit ja.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C13</span><span class="st">Sprachprofil anwenden</span><span class="tm">3 Minuten</span></div>
+<p class="goal">Der Text bekommt deine Stimme und wird gleichzeitig deutlich kürzer.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Setz den Prompt unten ein. Füg dein Tone-of-Voice-Dokument aus A5 und den Draft aus C11 in die Platzhalter.</li>
+<li>Das Ergebnis kommt bewusst überdreht zurück, weil der Prompt deinen Sprachregler auf 130 Prozent stellt. Das ist gewollt.</li>
+<li>Erschrick nicht über die Schärfe. Einen zu krassen Text wieder einzufangen ist leicht, einen langweiligen aufzupeppen fast unmöglich.</li>
+</ol>
+<details class="pd"><summary>Prompt 9 — Sprachprofil anwenden (130 Prozent)</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>DU BIST EIN ERFAHRENER SENIOR GHOSTWRITER, SPEZIALISIERT AUF AUTHENTISCHES PERSONAL BRANDING.
+
+DEINE AUFGABE:
+Ich gebe dir unten einen fertigen Text-Entwurf (Draft) sowie meine spezifische Tone of Voice. Ueberarbeite den Entwurf so, dass er exakt meinem Stil entspricht.
+
+1. TONALITAET & SPRACH-REGLER (130%):
+Drehe den Regler fuer mein unten hinterlegtes Sprachbild auf 130%. Nutze gnadenlos meine typischen Woerter, meinen Rhythmus und meine direkte Attituede.
+Kuerze den Text um 30%: Fokussiere dich nur auf die EINE Kernbotschaft. Streiche alles, was nicht darauf einzahlt (keine Wiederholungen am Ende).
+
+---
+
+TONE OF VOICE (SPRACHBILD):
+[HIER TONE OF VOICE EINFUEGEN]
+
+ENTWURF (DRAFT):
+[HIER BEITRAG/ENTWURF EINFUEGEN]</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> der Text rund 30 Prozent kürzer ist und spürbar nach dir klingt.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C14</span><span class="st">Final Polish von Hand</span><span class="tm">10 Minuten</span></div>
+<p class="goal">Der letzte Durchgang. Hier entscheidet sich, ob der Text nach Mensch oder nach Maschine klingt.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Lass zuerst den Prompt unten über den Text laufen. Er räumt LLM-Floskeln, Gedankenstriche und Emoji-Unsinn weg.</li>
+<li>Jetzt von Hand, und zwar laut lesen. Überall wo du stolperst, kürzt oder teilst du den Satz.</li>
+<li>Absätze setzen: ein bis fünf Zeilen pro Sinneseinheit, ideal drei. Keine Textwüste, aber auch nicht nach jedem zweiten Wort ein Umbruch.</li>
+<li>Hook-Abstand prüfen: einzeilige Hook bekommt zwei Leerzeilen danach, zwei- oder dreizeilige nur eine.</li>
+<li>Emojis zählen. Maximal drei im ganzen Text, Listenmarker nicht mitgerechnet.</li>
+<li>Nach Unicode-Fett und Unicode-Kursiv suchen und durch Normalschrift ersetzen. Das ist auf LinkedIn ein deutliches Anfängersignal.</li>
+<li>Gedankenstriche suchen und durch Kommas oder einen Punkt ersetzen.</li>
+<li>Alles streichen, was nach deinem Schlusssatz noch kommt. KI hängt dort gern ein zweites Fazit an.</li>
+</ol>
+<details class="pd"><summary>Prompt 10 — Humanizer</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Aufgabe: Überarbeite den gegebenen LinkedIn-Text -> natürlich, menschlich, authentisch.
+Ergebnis: Reiner Text im Codeblock ohne Markdown.
+
+Anweisungen für den LinkedIn-Text:
+
+1. Stil & Ton:
+- Wortlaut stark beibehalten, aber extreme steife/formelle LLM-Formulierungen ändern.
+- Ursprüngliche Anrede (Du/Sie) beibehalten (Regel: "du" klein außer am Satzanfang, "Sie" immer groß).
+- Keine LLM-Floskeln (z.B. "In einer Welt, in der...", "maßgeschneidert", "revolutionär").
+- Keine übertriebenen/unnötigen Adjektive (z.B. "unglaublich", "bahnbrechend").
+- Keine Synonymketten (z.B. "effizient, wirkungsvoll und zielführend").
+
+2. Satzbau & Zeichensetzung:
+- Absolut keine Gedankenstriche in Sätzen.
+Lange Sätze: In kurze Hauptsätze mit Punkt teilen.
+- Satzanfang mit "Und", "Aber", "Oder" erlaubt, wenn umgangssprachlich passend.
+- Keine unüblichen Kommas (z.B. oft vor "und", wenn neuer Satz besser wäre).
+- Ausgeschriebene Ziffern beibehalten, falls im Original vorhanden (z.B. "3 Dinge").
+
+3. Formatierung:
+- Sinnvolle Absätze im LinkedIn-Stil nutzen.
+- Hook-Abstand: 1 Zeile Hook -> 2 Leerzeilen danach. 2-3 Zeilen Hook -> 1 Leerzeile danach.
+- Keine Pseudo-Textformatierungen (Unicode-Fett/-Kursiv etc.). Nur Standardtext.
+- Nach Doppelpunkt groß beginnen (Beispiel: "Bedeutet: Ein kleines Team.").
+
+4. Emojis:
+- Nur sinnvolle, menschliche Standard-Emojis.
+- Originale Textemojis (":D", ";)", ":)") beibehalten.
+- Max. 3 Emojis gesamt. Emojis als Listenmarker zählen nicht,
+wenn sie im Original schon so genutzt wurden.
+- Nie verwenden: Rakete, Diamant, blaue Raute, Konfetti, Megafon, Pin, Funkeln.
+- Aufzählungen (nur ohne Emoji-Marker): Mit Zahlen (1., 2.) oder Bindestrich+Leerzeichen (- ) markieren.
+- Zeile beginnt mit Emoji: Emoji + Leerzeichen + Text.
+- Emoji am Satzende: Punkt (.) davor weglassen. ? und ! bleiben.
+- Einstiegssatz nicht von Emojis umklammern.
+
+5. Sonstiges:
+- Alle Hashtags (Ende/im Text) entfernen, außer sie waren explizit zu erhaltender Teil des Original-Inputs.
+Hashtags am Ende immer entfernen.
+- Keine generischen Anreden ("Liebe LinkedIn Community")
+
+Bestätige kurz Bereitschaft und warte auf den LinkedIn-Text.</pre></div></details>
+<div class="ok"><b>Fertig, wenn</b> du den ganzen Text laut lesen kannst, ohne einmal zu stolpern.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C15</span><span class="st">Bild bauen</span><span class="tm">15 bis 30 Minuten</span></div>
+<p class="goal">Aus deinem Bildkonzept aus C8 wird eine fertige Datei.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Bei Kategorie A: Geh in den Emotions-Ordner aus A9, der zu deiner Emotion aus C1 passt, und zieh das Bild heraus.</li>
+<li>Bei Kategorie B mit Tabelle: Bau die Tabelle wirklich in Excel oder Google Sheets, exportier sie als PDF und schneid einen Screenshot zu. Sie <em>muss</em> aussehen, als hättest du sie eben für einen Kollegen zusammengehackt. Lass bewusst eine Information weg, die eine naheliegende Rückfrage auslöst.</li>
+<li>Bei Text-Overlay: Heb nur einzelne Trigger-Wörter hervor, nicht den ganzen Satz.</li>
+<li>KI nur für Umgebung, Objekte, Hintergründe, Karikaturen und Infografiken einsetzen. Gesicht und Hände lässt du unangetastet, das geht meistens schief.</li>
+<li>Wenn du handschriftlichen Text brauchst: erst das saubere Element von der KI erzeugen lassen, dann auf ein Foto eines echten Whiteboards oder Blocks projizieren. Direkt gerenderter Text sieht künstlich aus.</li>
+<li>Exportier in 1080 mal 1350 Pixel, also 4 zu 5. Das ist die maximale Höhe auf dem Handy ohne Beschnitt.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> du das Bild auf deinem Handy ohne Zoom lesen kannst.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C16</span><span class="st">Metadaten entfernen</span><span class="tm">2 Minuten</span></div>
+<p class="goal">Verhindert, dass LinkedIn ein „KI-generiert"-Label auf dein Bild klebt. Nur nötig, wenn KI im Spiel war.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Sichtbare Wasserzeichen wegstempeln oder wegschneiden.</li>
+<li>Das Bild per Rechtsklick kopieren. Du kopierst damit die reinen Bildpunkte, nicht die Datei mit ihren unsichtbaren Metadaten.</li>
+<li>Ein komplett neues, leeres Dokument in Canva oder Photoshop öffnen und einfügen.</li>
+<li>Von dort neu exportieren. Lade niemals die Datei hoch, die dir die KI direkt ausgegeben hat.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> beim Hochladen kein Label erscheint.</div>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">C17</span><span class="st">Posten</span><span class="tm">5 Minuten, danach 3 Stunden Aufmerksamkeit</span></div>
+<p class="goal">Der Post geht live. Die folgenden zwei bis drei Stunden entscheiden über seine Reichweite.</p>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Text aus dem Dokument in LinkedIn einfügen und die Formatierung kontrollieren. Beim Kopieren gehen regelmäßig Absätze verloren oder es entstehen zusätzliche Leerzeichen.</li>
+<li>Bild anhängen und die Vorschau auf dem Handy ansehen, nicht am Rechner. Dort wird gelesen.</li>
+<li>Keine Hashtags.</li>
+<li>Veröffentlichen und danach zwei bis drei Stunden erreichbar bleiben. In dieser Zeit spielt der Algorithmus den Beitrag einem kleinen Testpublikum aus. Reagiert dort niemand, stirbt der Post.</li>
+<li>Auf jeden Kommentar antworten, möglichst mit einer Rückfrage. Jede Antwort verlängert die Testphase.</li>
+</ol>
+<div class="ok"><b>Fertig, wenn</b> der Post live ist und du auf die ersten Kommentare geantwortet hast.</div>
+</div>
+
+<div class="bh" id="d"><div class="bt">Block D — Danach</div><div class="bm">Ohne diesen Block schreibst du jede Woche bei null los. Mit ihm verzinst sich jeder Gewinner mehrfach.</div></div>
+
+<div class="s">
+<div class="sh"><span class="sc">D1</span><span class="st">Nach 48 bis 72 Stunden messen</span><span class="tm">5 Minuten</span></div>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Impressions, Likes, Kommentare und Speicherungen ins Gewinner-Register eintragen.</li>
+<li>Follower händisch notieren, immer zur selben Uhrzeit. Die Zählung in der App schwankt.</li>
+</ol>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">D2</span><span class="st">Signatur einordnen</span><span class="tm">3 Minuten</span></div>
+<div class="lbl">Vier Muster</div>
+<ul class="pl">
+<li>Deutlich mehr Likes als Kommentare: dein Schlusssatz hat getroffen, es war ein Zustimmungsthema.</li>
+<li>Likes und Kommentare etwa gleich: ein echtes Diskussionsthema. Davon mehr.</li>
+<li>Deutlich mehr Kommentare als Likes: Polarisierung. Die Leute wollten sich reiben, nicht zustimmen.</li>
+<li>Viele Speicherungen: Mehrwert-Treffer. Das sind Listen, Vorlagen und Prompts. Genau die bringen Follower.</li>
+</ul>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">D3</span><span class="st">Gegen den Threshold prüfen</span><span class="tm">1 Minute</span></div>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Vergleich die Impressions mit deiner Zahl aus A7.</li>
+<li>Darüber heißt Gewinner-Kandidat. Darunter heißt: nichts weiter tun, nächster Post.</li>
+</ol>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">D4</span><span class="st">Gewinner-Register pflegen</span><span class="tm">5 Minuten</span></div>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Trag zu jedem Gewinner ein: Datum, Zahlen, Master-Muster, Framework, Bildtyp, Link.</li>
+<li>Ohne dieses Register findest du in drei Monaten deine eigenen Gewinner nicht wieder, und dann gibt es kein Recycling.</li>
+</ol>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">D5</span><span class="st">Nach etwa einer Woche remixen</span><span class="tm">15 Minuten</span></div>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Lass den Prompt unten über den Gewinner laufen, samt Zahlen und Bildbeschreibung.</li>
+<li>Du bekommst fünf Ideen, sortiert von minimalem bis komplexem Aufwand. Wähl eine.</li>
+<li>Faustregel: Änderst du eine der drei Ebenen Form, Stil oder Thema, darfst du schon nach einer Woche erneut posten.</li>
+<li>Steig mit der gewählten Idee wieder bei C8 oder C11 ein.</li>
+</ol>
+<details class="pd"><summary>Prompt 11 — Remix-Ideen finden</summary><div class="pdb"><div class="cpr"><button class="cp">Kopieren</button></div><pre>Du bist ein erstklassiger LinkedIn Copywriter und Content-Stratege. Deine Aufgabe ist es, einen bereits erfolgreichen LinkedIn-Post von mir zu analysieren und ihn nach bewaehrten "Recycling- und Remixing"-Prinzipien neu zu verpacken.
+
+Der Algorithmus zeigt nie allen alles, daher muessen Gewinner-Posts wiederholt werden, ohne dass es der Zielgruppe als Wiederholung auffaellt.
+
+Hier sind die Prinzipien, die du fuer deine Ideen nutzen musst. Sie sind nach Aufwand und Abstraktionsgrad sortiert:
+
+PRINZIP 1: DER UPDATE-TRICK (Minimaler Aufwand)
+Lass Text und Bild fast identisch. Passe nur Nuancen wie den zeitlichen Bezug an.
+Beispiel: Aus "Fuer 4000 Euro bin ich ab heute stolzer Besitzer einer BahnCard" wird "Fuer 4000 Euro bin ich seit 6 Monaten stolzer Besitzer einer BahnCard".
+
+PRINZIP 2: FORMAT-WECHSEL & TRANSMUTATION (Einfach)
+Der Kerninhalt bleibt komplett erhalten, aber das optische Format aendert sich.
+Beispiele: Ein reiner Text-Post wird zu einem Karussell/Video. Ein Screenshot wird als formattierter Text neu geschrieben. Ein helles Bild wird invertiert (Dark Mode) oder als GIF gespeichert. Alternativ: Man nimmt den besten Kommentar unter dem alten Post als Aufhaenger fuer den neuen.
+
+PRINZIP 3: DIE HOOK-SCHABLONE / LUECKENTEXT (Mittel)
+Du hast eine Hook, die extrem gut lief. Isoliere die Struktur und tausche nur die Variablen aus.
+Beispiel: Aus "Mitarbeiter A hat Tattoos. Mitarbeiter B hat keine Tattoos. Der Unterschied? Keiner." wird "Bewerber A hat einen Master. Bewerber B ist Quereinsteiger. Der Unterschied? Keiner."
+
+PRINZIP 4: MEHR VOM GLEICHEN & NACHBAR-THEMEN (Fortgeschritten)
+Behalte den exakt gleichen Stil und die gleiche Aufmachung bei, aber beleuchte einen eng verwandten Aspekt oder skaliere die Idee.
+Beispiel: Ein Post mit "54 LinkedIn Ideen" funktionierte gut, der neue Post heisst "101 Ideen". Ein Post ueber "Die unnötigsten Benefits" wird zu "Die unnötigsten Standardsätze im Anschreiben". Das Prinzip wird umgedreht oder fortgefuehrt.
+
+PRINZIP 5: DAS FRAMEWORK EXTRAHIEREN / DER HEILIGE GRAL (Komplex)
+Du nimmst nur die zugrundeliegende psychologische Struktur und Kernbotschaft des Posts.
+Beispiel: Die Struktur lautet "Kontrastierung von extremen Positionen, um die goldene Mitte als Loesung zu praesentieren". Der Original-Post handelte von "Mitarbeitern, die zu wenig leisten vs. uebertreiben". Der Remix behaelt diese Struktur, redet aber ueber ein voellig anderes Thema, z.B. "Kunden, die alles kontrollieren wollen vs. Kunden, die nie erreichbar sind". Der Inhalt aendert sich, das Framework bleibt.
+
+DEINE AUFGABE:
+Ich gebe dir gleich meinen erfolgreichen Post (inklusive Kontext wie Impressionen, Kommentare und Bild-Beschreibung).
+Erstelle mir basierend darauf 5 konkrete, direkt postbare Remix-Vorschlaege.
+Sortiere sie von Vorschlag 1 (simpelster Aufwand, Prinzip 1) bis Vorschlag 5 (komplexester Aufwand, Prinzip 5).
+Schreibe bei jedem Vorschlag kurz dazu, wie und warum du das jeweilige Prinzip angewendet hast. Gebe mir keinen (noch) keinen fertigen Post, sondern nur Ideen.
+
+Hier ist mein Original-Post:
+[HIER POST-TEXT EINFUEGEN]
+
+Kontext zum Post (Impressionen, Kommentare, Besonderheiten, Bild/Video):
+[HIER KONTEXT UND ZAHLEN EINFUEGEN]</pre></div></details>
+</div>
+
+<div class="s">
+<div class="sh"><span class="sc">D6</span><span class="st">Nach etwa drei Monaten 1:1 reposten</span><span class="tm">10 Minuten</span></div>
+<div class="lbl">So gehst du vor</div>
+<ol class="do">
+<li>Nach rund drei Monaten kannst du einen starken Post nahezu unverändert erneut veröffentlichen.</li>
+<li>Vier einfache Varianten: den zeitlichen Bezug anpassen (Update-Trick), das Bild in Dark Mode invertieren, das Bild als GIF speichern, oder dieselbe Liste in einem anderen Gewand zeigen.</li>
+<li>Eigene Gewinner darfst du wörtlich kopieren. Von fremden Creatorn nimmst du ausschließlich die abstrakte Struktur, nie die Formulierung.</li>
+<li>Erst wenn ein Post ein zweites Mal funktioniert, ist bewiesen, dass es kein Zufall war.</li>
+</ol>
+</div>
+
+</div>
+<script>
+document.querySelectorAll('.cp').forEach(function(b){
+ b.addEventListener('click',function(e){
+  e.preventDefault();
+  var pre=b.closest('.pdb').querySelector('pre');
+  var t=pre.innerText;
+  function ok(){b.textContent='Kopiert';setTimeout(function(){b.textContent='Kopieren'},1600)}
+  function fb(){
+   var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
+   document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(err){}
+   document.body.removeChild(ta);
+  }
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else{fb()}
+ });
+});
+</script>
+</body>
+</html>
